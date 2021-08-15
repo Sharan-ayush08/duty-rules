@@ -54,18 +54,19 @@ class _ViewDutyState extends State<ViewDuty> {
                           "Duty Name",
                           style: TextStyle(
                             fontSize: 28.0,
-                            color: Colors.grey,
+                            color: Colors.black,
                           ),
                         ),
                       ),
                       Container(
                         padding: EdgeInsets.only(left: 16, right: 16),
                         decoration: BoxDecoration(
+                            color: Colors.grey[300],
                             border: Border.all(color: Colors.grey, width: 1),
                             borderRadius: BorderRadius.circular(15)),
                         child: DropdownButton(
                           dropdownColor: Colors.grey[300],
-                          icon: Icon(Icons.arrow_downward),
+                          icon: Icon(Icons.arrow_drop_down),
                           underline: SizedBox(),
                           hint: Text(
                             'Select Duty',
@@ -100,11 +101,12 @@ class _ViewDutyState extends State<ViewDuty> {
                     Container(
                       padding: EdgeInsets.only(left: 16, right: 16),
                       decoration: BoxDecoration(
+                          color: Colors.grey[300],
                           border: Border.all(color: Colors.grey, width: 1),
                           borderRadius: BorderRadius.circular(15)),
                       child: DropdownButton(
                         dropdownColor: Colors.grey[300],
-                        icon: Icon(Icons.arrow_downward),
+                        icon: Icon(Icons.arrow_drop_down),
                         underline: SizedBox(),
                         hint: Text(
                           'Seniority Level',
@@ -139,11 +141,12 @@ class _ViewDutyState extends State<ViewDuty> {
                     Container(
                       padding: EdgeInsets.only(left: 16, right: 16),
                       decoration: BoxDecoration(
+                          color: Colors.grey[300],
                           border: Border.all(color: Colors.grey, width: 1),
                           borderRadius: BorderRadius.circular(15)),
                       child: DropdownButton(
                         dropdownColor: Colors.grey[300],
-                        icon: Icon(Icons.arrow_downward),
+                        icon: Icon(Icons.arrow_drop_down),
                         underline: SizedBox(),
                         hint: Text(
                           'Seniority Level',
@@ -178,11 +181,12 @@ class _ViewDutyState extends State<ViewDuty> {
                     Container(
                       padding: EdgeInsets.only(left: 16, right: 16),
                       decoration: BoxDecoration(
+                          color: Colors.grey[300],
                           border: Border.all(color: Colors.grey, width: 1),
                           borderRadius: BorderRadius.circular(15)),
                       child: DropdownButton(
                         dropdownColor: Colors.grey[300],
-                        icon: Icon(Icons.arrow_downward),
+                        icon: Icon(Icons.arrow_drop_down),
                         underline: SizedBox(),
                         hint: Text(
                           'Seniority Level',
@@ -237,7 +241,9 @@ class Counter extends StatefulWidget {
 }
 
 class _CounterState extends State<Counter> {
+  bool? disable = false;
   int _itemcount = 0;
+
   @override
   Widget build(BuildContext context) {
     return Container(
