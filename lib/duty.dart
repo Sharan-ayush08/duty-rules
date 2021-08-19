@@ -265,7 +265,7 @@ class _CounterState extends State<Counter> {
               onPressed: () => null,
               icon: Icon(
                 Icons.remove_circle_outline,
-                color: Colors.grey[300],
+                color: Colors.grey[350],
               )),
       Text(
         _itemcount.toString(),
