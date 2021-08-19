@@ -261,7 +261,12 @@ class _CounterState extends State<Counter> {
                 });
               },
             )
-          : Container(),
+          : IconButton(
+              onPressed: () => null,
+              icon: Icon(
+                Icons.remove_circle_outline,
+                color: Colors.grey[300],
+              )),
       Text(
         _itemcount.toString(),
         style: TextStyle(fontSize: 25.0),
